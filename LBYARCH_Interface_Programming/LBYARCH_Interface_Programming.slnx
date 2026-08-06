@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="LBYARCH_Interface_Programming/LBYARCH_Interface_Programming.vcxproj" Id="338d5a77-06e4-4c96-958f-f65d3ed7a910" />
+</Solution>
