@@ -22,7 +22,7 @@ L1:
     movss xmm0, [rcx + r10*4]
     mulss xmm0, xmm1
 
-    cvtss2si eax, xmm0 ; cvttss2si
+    cvttss2si eax, xmm0 ; cvtss2si
 
     mov [rdx + r10], al
     inc r10d

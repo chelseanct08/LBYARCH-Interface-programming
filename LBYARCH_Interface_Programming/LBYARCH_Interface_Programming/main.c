@@ -3,13 +3,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Assembly function
+extern void imgCvtGrayFloatToInt(float* input, unsigned char* output, int size);
+
 int main(void)
 {
     int height, width;
 
     printf("=== Grayscale Float Image Input ===\n");
 
-    // Read image dimensions
     printf("Enter height and width: ");
 
     if (scanf("%d %d", &height, &width) != 2)
@@ -20,7 +22,6 @@ int main(void)
 
     int size = height * width;
 
-    // Allocate memory
     float* input = (float*)malloc(size * sizeof(float));
     unsigned char* output = (unsigned char*)malloc(size * sizeof(unsigned char));
 
@@ -34,7 +35,6 @@ int main(void)
         return 1;
     }
 
-    // Read pixel values
     printf("Enter %d grayscale values (0.0 to 1.0):\n", size);
 
     for (int i = 0; i < size; i++)
@@ -50,7 +50,6 @@ int main(void)
         }
     }
 
-    // Display the input image
     printf("\nInput Image:\n");
 
     for (int i = 0; i < size; i++)
@@ -61,7 +60,18 @@ int main(void)
             printf("\n");
     }
 
-    // Free allocated memory
+    imgCvtGrayFloatToInt(input, output, size);
+
+    printf("\nOutput Image:\n");
+
+    for (int i = 0; i < size; i++)
+    {
+        printf("%u ", output[i]);
+
+        if ((i + 1) % width == 0)
+            printf("\n");
+    }
+
     free(input);
     free(output);
 
