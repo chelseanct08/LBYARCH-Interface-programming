@@ -24,7 +24,7 @@ Output Image:
 216 242 38 84
 ```
 ### Result
-[Insert description]
+[short summary of the correctness test]
 
 ### Screenshot
 > <img width="383" height="299" alt="image" src="https://github.com/user-attachments/assets/03abc258-274f-42fe-9ebc-e188e03d253e" />
@@ -62,3 +62,4 @@ Output Image:
 
 
 ## Performance Analysis
+[short discussion of the performance results]
