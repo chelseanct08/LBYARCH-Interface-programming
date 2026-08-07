@@ -37,7 +37,7 @@ Correctness Check: PASSED
 ### Performance Test Screenshots
 > 10x10
 
-<img width="612" height="151" alt="Screenshot 2026-08-07 122243" src="https://github.com/user-attachments/assets/7a451b7f-8e72-4d73-b273-95e60b1b3931" />
+> <img width="612" height="151" alt="Screenshot 2026-08-07 122243" src="https://github.com/user-attachments/assets/7a451b7f-8e72-4d73-b273-95e60b1b3931" />
 
 > 100x100
 
