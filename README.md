@@ -31,7 +31,7 @@ The output matched the expected results after the grayscale values were converte
 
 ### Program Output Screenshot
 <div align="center">
-  <img width="365" height="336" alt="image" src="https://github.com/user-attachments/assets/9246771a-53a1-40ac-a2dc-c0c69f8b2fb9" />
+  <img width="370" height="339" alt="image" src="https://github.com/user-attachments/assets/9246771a-53a1-40ac-a2dc-c0c69f8b2fb9" />
 </div>
 
 ---
