@@ -24,8 +24,8 @@ int main(void)
     } */
 
     // performance test
-    height = 10;
-	width = 10;
+    height = 1000;
+	width = 1000;
     
     int size = height * width;
 
@@ -147,8 +147,8 @@ int main(void)
         printf("\nCorrectness Check: FAILED\n");
     }
 
-    printf("\nTotal Execution Time (30 runs): %.12f seconds\n", totalTime);
-    printf("Average Execution Time        : %.12f seconds\n", averageTime);
+    printf("\nTotal Execution Time (30 runs): %.7f seconds\n", totalTime);
+    printf("Average Execution Time        : %.7f seconds\n", averageTime);
 
     free(input);
     free(output);
