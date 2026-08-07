@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <windows.h>
 
 // Assembly function
 extern void imgCvtGrayFloatToInt(float* input, unsigned char* output, int size);
@@ -70,19 +70,25 @@ int main(void)
         expected[i] = (unsigned char)(input[i] * 255.0f);
     }
 
-    // Measure ASM execution time (30 runs)
-    double totalTime = 0.0;
+    // Timing (30 runs)
+    LARGE_INTEGER frequency;
+    LARGE_INTEGER start;
+    LARGE_INTEGER end;
+
+    QueryPerformanceFrequency(&frequency);
+
+    QueryPerformanceCounter(&start);
 
     for (int run = 0; run < 30; run++)
     {
-        clock_t start = clock();
-
         imgCvtGrayFloatToInt(input, output, size);
-
-        clock_t end = clock();
-
-        totalTime += (double)(end - start) / CLOCKS_PER_SEC;
     }
+
+    QueryPerformanceCounter(&end);
+
+    double totalTime =
+        (double)(end.QuadPart - start.QuadPart) /
+        frequency.QuadPart;
 
     double averageTime = totalTime / 30.0;
 
@@ -90,7 +96,7 @@ int main(void)
 
     for (int i = 0; i < size; i++)
     {
-        printf("%u ", output[i]);
+        printf("%3u ", output[i]);
 
         if ((i + 1) % width == 0)
             printf("\n");
@@ -120,7 +126,8 @@ int main(void)
         printf("\nCorrectness Check: FAILED\n");
     }
 
-    printf("Average ASM Execution Time (30 runs): %.10f seconds\n", averageTime);
+    printf("\nTotal Execution Time (30 runs): %.12f seconds\n", totalTime);
+    printf("Average Execution Time        : %.12f seconds\n", averageTime);
 
     free(input);
     free(output);
