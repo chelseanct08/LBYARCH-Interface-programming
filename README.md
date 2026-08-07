@@ -9,26 +9,24 @@
 ### Sample Input
 ```text
 Input Image:
+3 4
 0.25 0.35 0.45 0.33
 0.55 0.65 0.75 0.33
 0.85 0.95 0.15 0.33
 ```
- 
+
 ### Sample Output
 ```text
 Output Image:
 63 89 114 84
 140 165 191 84
 216 242 38 84
-
-Correctness Check: PASSED
 ```
 ### Result
 [Insert description]
 
 ### Screenshot
-> [Insert a screenshot of the correctness test]
-
+> <img width="665" height="116" alt="Screenshot 2026-08-07 125258" src="https://github.com/user-attachments/assets/9b6ac162-fefa-4cbb-a4e1-eb7b918ea422" />
 ---
 ## Performance Evaluation
 
