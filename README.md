@@ -4,7 +4,7 @@
 - `main.c` - Handles memory allocation, reads the image data, calls the assembly function, checks the output for correctness, and measures the execution time.
 - `convert.asm` - Converts grayscale floating-point pixel values to 8-bit integer grayscale values using x86-64 assembly.
 ---
-## Correctness Check
+## Correctness
 
 ### Sample Input
 ```text
