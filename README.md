@@ -47,15 +47,15 @@ The output matched the expected results after the grayscale values were converte
 ### Performance Test Screenshots
 > 10x10
 
-> <img width="612" height="151" alt="Screenshot 2026-08-07 122243" src="https://github.com/user-attachments/assets/7a451b7f-8e72-4d73-b273-95e60b1b3931" />
+> <img width="607" height="146" alt="Screenshot 2026-08-07 122243" src="https://github.com/user-attachments/assets/7a451b7f-8e72-4d73-b273-95e60b1b3931" />
 
 > 100x100
 
-> <img width="615" height="151" alt="Screenshot 2026-08-07 122144" src="https://github.com/user-attachments/assets/5f9867db-12bc-45ac-90e0-869b6e0dde2e" />
+> <img width="610" height="146" alt="Screenshot 2026-08-07 122144" src="https://github.com/user-attachments/assets/5f9867db-12bc-45ac-90e0-869b6e0dde2e" />
 
 > 1000x1000
 
-> <img width="613" height="147" alt="Screenshot 2026-08-07 123355" src="https://github.com/user-attachments/assets/ca676a5c-0326-46c8-a70b-6dc9567b055d" />
+> <img width="608" height="142" alt="Screenshot 2026-08-07 123355" src="https://github.com/user-attachments/assets/ca676a5c-0326-46c8-a70b-6dc9567b055d" />
 
 ## Performance Results
 
