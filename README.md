@@ -30,9 +30,9 @@ Output Image:
 The output matched the expected results after the grayscale values were converted from floating-point to 8-bit integer values. The correctness check passed, showing that the assembly function produced the correct output.
 
 ### Program Output Screenshot
-> <p align="center">
+<div align="center">
   <img width="365" height="336" alt="image" src="https://github.com/user-attachments/assets/9246771a-53a1-40ac-a2dc-c0c69f8b2fb9" />
-  </p>
+</div>
 
 ---
 ## Performance Evaluation
