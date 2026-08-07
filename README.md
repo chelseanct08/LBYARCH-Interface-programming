@@ -9,6 +9,7 @@
 ### Sample Input
 ```text
 Enter height and width: 3 4
+
 Enter 12 grayscale values (0.0 to 1.0):
 0.25 0.35 0.45 0.33
 0.55 0.65 0.75 0.33
@@ -26,7 +27,8 @@ Output Image:
 [Insert description]
 
 ### Screenshot
-> <img width="665" height="116" alt="Screenshot 2026-08-07 125258" src="https://github.com/user-attachments/assets/9b6ac162-fefa-4cbb-a4e1-eb7b918ea422" />
+> <img width="383" height="299" alt="image" src="https://github.com/user-attachments/assets/03abc258-274f-42fe-9ebc-e188e03d253e" />
+
 ---
 ## Performance Evaluation
 
