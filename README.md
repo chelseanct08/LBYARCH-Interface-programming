@@ -67,4 +67,9 @@ The output matched the expected results after the grayscale values were converte
 
 
 ## Performance Analysis
-[short discussion of the performance results]
+The performance results show that the execution time increases as the image size increases. For a 10x10 image, the total execution time is 0.0000063 seconds while the average execution time is 0.0000002 seconds. For a 100x100 image, both the total and average execution times increase to 0.0003723 seconds and 0.0000124 seconds respectively. The highest total and average execution times were recorded for the 1000x1000 image at 0.0452087 seconds and 0.0015070 seconds respectively. 
+
+This increase is expected because larger images have more pixels that the assembly function needs to process. The assembly function performs the same operation for each pixel by multiplying the float value by 255 and then converting it into an unsigned 8-bit integer. Therefore, as the number of pixels increases, the assembly function needs to perform more loop iterations.
+
+
+
