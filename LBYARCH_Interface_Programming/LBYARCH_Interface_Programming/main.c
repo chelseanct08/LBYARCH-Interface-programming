@@ -14,19 +14,21 @@ int main(void)
 
     printf("=== Grayscale Image Float-to-Integer Converter ===\n");
 
-    /* correctness test
+    // correctness test
     printf("Enter height and width: ");
 
     if (scanf("%d %d", &height, &width) != 2)
     {
         printf("Invalid input.\n");
         return 1;
-    } */
+    } 
 
-    // performance test
-    height = 1000;
-	width = 1000;
-    
+    /* performance test
+    height = 10; // 100 , 1000 
+	width = 10; // 100 , 1000 
+    */
+
+
     int size = height * width;
 
     // allocate memory
@@ -45,7 +47,7 @@ int main(void)
         return 1;
     }
 
-    /* correctness test
+    // correctness test
     printf("Enter %d grayscale values (0.0 to 1.0):\n", size);
 
     for (int i = 0; i < size; i++)
@@ -60,17 +62,17 @@ int main(void)
 
             return 1;
         }
-    } */
+    }
 
-    // performance test - generates random input
+    /* performance test - generates random input
     srand(1);
 
     for (int i = 0; i < size; i++)
     {
         input[i] = (float)rand() / RAND_MAX;
-    }
+    } */
 
-    /* correctness test - displays the input image
+    // correctness test - displays the input image
     printf("\nInput Image:\n");
 
     for (int i = 0; i < size; i++)
@@ -79,15 +81,13 @@ int main(void)
 
         if ((i + 1) % width == 0)
             printf("\n");
-    } */
+    }
 
     // compute expected output in C
     for (int i = 0; i < size; i++)
     {
         expected[i] = (unsigned char)(input[i] * 255.0f);
     }
-
-    // hello
 
 	// 30 runs for average execution time
     LARGE_INTEGER frequency;
@@ -112,7 +112,7 @@ int main(void)
     double averageTime = totalTime / 30.0;
 
     
-    /* correctness test - displays the output image
+    // correctness test - displays the output image
     printf("\nOutput Image:\n");
 
     for (int i = 0; i < size; i++)
@@ -121,7 +121,7 @@ int main(void)
 
         if ((i + 1) % width == 0)
             printf("\n");
-    } */
+    }
 
     // correctness check
     int correct = 1;
