@@ -37,7 +37,7 @@ Output Image:
 - Image Sizes Tested:
   - 10 x 10
   - 100 x 100
-  - 1000 x 100
+  - 1000 x 1000
  
 ### Performance Test Screenshots
 > 10x10
