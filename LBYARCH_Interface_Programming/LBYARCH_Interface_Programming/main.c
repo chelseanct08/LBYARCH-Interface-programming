@@ -6,7 +6,7 @@
 #include <windows.h>
 
 // assembly function
-extern void imgCvtGrayFloatToInt(float* input, unsigned char* output, int size);
+extern void convert(float* input, unsigned char* output, int size);
 
 int main(void)
 {
@@ -100,7 +100,7 @@ int main(void)
 
     for (int run = 0; run < 30; run++)
     {
-        imgCvtGrayFloatToInt(input, output, size);
+        convert(input, output, size);
     }
 
     QueryPerformanceCounter(&end);
