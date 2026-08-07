@@ -1,19 +1,21 @@
 # LBYARCH-Interface-programming
-
+---
 ## Files
-- `main.c`
-- `convert.asm` 
-
+- `main.c` - [Insert short description]
+- `convert.asm` - [Insert short description]
+---
 ## Correctness Check
 
 ### Sample Input
-
+[Insert the sample input used for testing]
+  
 ### Sample Output
+[Insert the sample output produced]
 
 ### Result
 
 ### Screenshot
-
+> [Insert screenshot]
 ---
 ## Performance Results
 
