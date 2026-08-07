@@ -51,7 +51,7 @@ Correctness Check: PASSED
 
 | Image Size | Total Execution Time (30 Runs) | Average Execution Time |
 |------------|-------------------------------:|-----------------------:|
-| 10 × 10 | 0.0000063 seconds | 0.00000002 seconds |
+| 10 × 10 | 0.0000063 seconds | 0.0000002 seconds |
 | 100 × 100 | 0.0003723 seconds | 0.0000124 seconds |
 | 1000 × 1000 | 0.050163800000 seconds | 0.001672126667 seconds |
 
