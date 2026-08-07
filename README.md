@@ -35,14 +35,13 @@ Correctness Check: PASSED
   - 1000 x 100
  
 ### Performance Test Screenshots
-> Performance Test
 > 10x10
 
-> <img width="667" height="153" alt="Screenshot 2026-08-07 111946" src="https://github.com/user-attachments/assets/87e08781-2936-42b5-9368-c539dbe129df" />
+<img width="612" height="151" alt="Screenshot 2026-08-07 122243" src="https://github.com/user-attachments/assets/7a451b7f-8e72-4d73-b273-95e60b1b3931" />
 
 > 100x100
 
-> <img width="666" height="156" alt="Screenshot 2026-08-07 112047" src="https://github.com/user-attachments/assets/a2a0288c-dd98-4d4f-85a8-9c6e3ebf1f71" />
+> <img width="615" height="151" alt="Screenshot 2026-08-07 122144" src="https://github.com/user-attachments/assets/5f9867db-12bc-45ac-90e0-869b6e0dde2e" />
 
 > 1000x1000
 
