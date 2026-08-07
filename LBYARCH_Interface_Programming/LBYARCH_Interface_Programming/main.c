@@ -20,7 +20,7 @@ int main(void)
     {
         printf("Invalid input.\n");
         return 1;
-    } 
+    }
 
     /* performance test
     height = 10; // 100 , 1000 
