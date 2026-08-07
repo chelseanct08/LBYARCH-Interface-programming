@@ -10,7 +10,9 @@
 [Insert the sample input used for testing]
   
 ### Sample Output
-[Insert the sample output produced]
+63 89 114 84
+140 165 191 84
+216 242 38 84
 
 ### Result
 
