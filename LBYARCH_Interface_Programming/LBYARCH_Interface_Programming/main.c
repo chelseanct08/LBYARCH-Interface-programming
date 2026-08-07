@@ -89,6 +89,8 @@ int main(void)
         expected[i] = (unsigned char)(input[i] * 255.0f);
     }
 
+    //hi
+
     // Timing (30 runs)
     LARGE_INTEGER frequency;
     LARGE_INTEGER start;
