@@ -10,10 +10,14 @@
 [Insert the sample input used for testing]
   
 ### Sample Output
+```text
+Output Image:
 63 89 114 84
 140 165 191 84
 216 242 38 84
 
+Correctness Check: PASSED
+```
 ### Result
 
 ### Screenshot
