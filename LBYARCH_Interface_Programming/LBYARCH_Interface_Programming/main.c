@@ -5,7 +5,7 @@
 #include <time.h>
 #include <windows.h>
 
-// Assembly function
+// assembly function
 extern void imgCvtGrayFloatToInt(float* input, unsigned char* output, int size);
 
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
 
     printf("=== Grayscale Float Image Input ===\n");
 
-    /*correctness
+    /* correctness test
     printf("Enter height and width: ");
 
     if (scanf("%d %d", &height, &width) != 2)
@@ -23,12 +23,13 @@ int main(void)
         return 1;
     } */
 
-    /* performance */
-    height = 10;
-	width = 10;
-
+    // performance test
+    height = 1000;
+	width = 1000;
+    
     int size = height * width;
 
+    // allocate memory
     float* input = (float*)malloc(size * sizeof(float));
     unsigned char* output = (unsigned char*)malloc(size * sizeof(unsigned char));
     unsigned char* expected = (unsigned char*)malloc(size * sizeof(unsigned char));
@@ -44,8 +45,7 @@ int main(void)
         return 1;
     }
 
-    /* correctness
-    
+    /* correctness test
     printf("Enter %d grayscale values (0.0 to 1.0):\n", size);
 
     for (int i = 0; i < size; i++)
@@ -62,8 +62,7 @@ int main(void)
         }
     } */
 
-    // performance - generate random input
-
+    // performance test - generates random input
     srand(1);
 
     for (int i = 0; i < size; i++)
@@ -71,9 +70,8 @@ int main(void)
         input[i] = (float)rand() / RAND_MAX;
     }
 
-	/* correctness - print input image
-   
-   printf("\nInput Image:\n");
+    /* correctness test - displays the input image
+    printf("\nInput Image:\n");
 
     for (int i = 0; i < size; i++)
     {
@@ -83,15 +81,15 @@ int main(void)
             printf("\n");
     } */
 
-    // Compute expected output in C
+    // compute expected output in C
     for (int i = 0; i < size; i++)
     {
         expected[i] = (unsigned char)(input[i] * 255.0f);
     }
 
-    //hi
+    // hello
 
-    // Timing (30 runs)
+	// 30 runs for average execution time
     LARGE_INTEGER frequency;
     LARGE_INTEGER start;
     LARGE_INTEGER end;
@@ -114,8 +112,7 @@ int main(void)
     double averageTime = totalTime / 30.0;
 
     
-    /* correctness
-    
+    /* correctness test - displays the output image
     printf("\nOutput Image:\n");
 
     for (int i = 0; i < size; i++)
@@ -126,7 +123,7 @@ int main(void)
             printf("\n");
     } */
 
-    // Correctness check
+    // correctness check
     int correct = 1;
 
     for (int i = 0; i < size; i++)
