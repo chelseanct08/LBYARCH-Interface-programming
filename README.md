@@ -7,8 +7,13 @@
 ## Correctness Check
 
 ### Sample Input
-[Insert the sample input used for testing]
-  
+```text
+Input Image:
+0.25 0.35 0.45 0.33
+0.55 0.65 0.75 0.33
+0.85 0.95 0.15 0.33
+```
+ 
 ### Sample Output
 ```text
 Output Image:
@@ -45,7 +50,7 @@ Correctness Check: PASSED
 
 > 1000x1000
 
-> <img width="665" height="151" alt="Screenshot 2026-08-07 112152" src="https://github.com/user-attachments/assets/42e70b6a-7b86-43e1-93fc-5a00da9c060d" />
+> <img width="613" height="147" alt="Screenshot 2026-08-07 123355" src="https://github.com/user-attachments/assets/ca676a5c-0326-46c8-a70b-6dc9567b055d" />
 
 ## Performance Results
 
@@ -53,7 +58,7 @@ Correctness Check: PASSED
 |------------|-------------------------------:|-----------------------:|
 | 10 × 10 | 0.0000063 seconds | 0.0000002 seconds |
 | 100 × 100 | 0.0003723 seconds | 0.0000124 seconds |
-| 1000 × 1000 | 0.050163800000 seconds | 0.001672126667 seconds |
+| 1000 × 1000 | 0.0452087 seconds | 0.0015070 seconds |
 
 
 ## Performance Analysis
