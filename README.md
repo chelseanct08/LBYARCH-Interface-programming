@@ -1,4 +1,7 @@
 # LBYARCH-Interface-programming
+** Group Members**
+- Hernaez
+- Tamayo
 ---
 ## Files
 - `main.c` - Handles memory allocation, reads the image data, calls the assembly function, checks the output for correctness, and measures the execution time.
