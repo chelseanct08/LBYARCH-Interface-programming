@@ -19,8 +19,22 @@ Output Image:
 Correctness Check: PASSED
 ```
 ### Result
+[Insert description]
 
 ### Screenshot
+> [Insert a screenshot of the correctness test]
+
+---
+## Performance Evaluation
+
+### Test Setup
+- Number of Runs: **30**
+- Image Sizes Tested:
+  - 10 x 10
+  - 100 x 100
+  - 1000 x 100
+ 
+### Performance Test Screenshots
 > Performance Test
 > 10x10
 
@@ -34,7 +48,6 @@ Correctness Check: PASSED
 
 > <img width="665" height="151" alt="Screenshot 2026-08-07 112152" src="https://github.com/user-attachments/assets/42e70b6a-7b86-43e1-93fc-5a00da9c060d" />
 
----
 ## Performance Results
 
 | Image Size | Total Execution Time (30 Runs) | Average Execution Time |
@@ -42,6 +55,6 @@ Correctness Check: PASSED
 | 10 × 10 | 0.000005400000 seconds | 0.000000180000 seconds |
 | 100 × 100 | 0.000543300000 seconds | 0.000018110000 seconds |
 | 1000 × 1000 | 0.050163800000 seconds | 0.001672126667 seconds |
----
+
 
 ## Performance Analysis
