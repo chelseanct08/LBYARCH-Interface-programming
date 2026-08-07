@@ -24,9 +24,9 @@ Output Image:
 216 242 38 84
 ```
 ### Result
-[short summary of the correctness test]
+The output matched the expected results after the grayscale values were converted from floating-point to 8-bit integer values. The correctness check passed, showing that the assembly function produced the correct output.
 
-### Screenshot
+### Program Output Screenshot
 > <img width="383" height="299" alt="image" src="https://github.com/user-attachments/assets/03abc258-274f-42fe-9ebc-e188e03d253e" />
 
 ---
