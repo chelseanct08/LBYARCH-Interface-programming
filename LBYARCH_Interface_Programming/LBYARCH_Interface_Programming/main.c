@@ -12,7 +12,7 @@ int main(void)
 {
     int height, width;
 
-    printf("=== Grayscale Float Image Input ===\n");
+    printf("=== Grayscale Image Float-to-Integer Converter ===\n");
 
     /* correctness test
     printf("Enter height and width: ");
@@ -24,8 +24,8 @@ int main(void)
     } */
 
     // performance test
-    height = 1000;
-	width = 1000;
+    height = 10;
+	width = 10;
     
     int size = height * width;
 
