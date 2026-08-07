@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <windows.h>
 
 // Assembly function
@@ -13,13 +14,18 @@ int main(void)
 
     printf("=== Grayscale Float Image Input ===\n");
 
+    /*correctness
     printf("Enter height and width: ");
 
     if (scanf("%d %d", &height, &width) != 2)
     {
         printf("Invalid input.\n");
         return 1;
-    }
+    } */
+
+    /* performance */
+    height = 10;
+	width = 10;
 
     int size = height * width;
 
@@ -38,6 +44,8 @@ int main(void)
         return 1;
     }
 
+    /* correctness
+    
     printf("Enter %d grayscale values (0.0 to 1.0):\n", size);
 
     for (int i = 0; i < size; i++)
@@ -52,9 +60,20 @@ int main(void)
 
             return 1;
         }
+    } */
+
+    // performance - generate random input
+
+    srand(1);
+
+    for (int i = 0; i < size; i++)
+    {
+        input[i] = (float)rand() / RAND_MAX;
     }
 
-    printf("\nInput Image:\n");
+	/* correctness - print input image
+   
+   printf("\nInput Image:\n");
 
     for (int i = 0; i < size; i++)
     {
@@ -62,7 +81,7 @@ int main(void)
 
         if ((i + 1) % width == 0)
             printf("\n");
-    }
+    } */
 
     // Compute expected output in C
     for (int i = 0; i < size; i++)
@@ -92,6 +111,9 @@ int main(void)
 
     double averageTime = totalTime / 30.0;
 
+    
+    /* correctness
+    
     printf("\nOutput Image:\n");
 
     for (int i = 0; i < size; i++)
@@ -100,7 +122,7 @@ int main(void)
 
         if ((i + 1) % width == 0)
             printf("\n");
-    }
+    } */
 
     // Correctness check
     int correct = 1;
