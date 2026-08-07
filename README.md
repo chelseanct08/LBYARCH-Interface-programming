@@ -33,9 +33,9 @@
 
 | Image Size | Total Execution Time (30 Runs) | Average Execution Time |
 |------------|-------------------------------:|-----------------------:|
-| 10 × 10 | [Insert result] | [Insert result] |
-| 100 × 100 | [Insert result] | [Insert result] |
-| 1000 × 1000 | [Insert result] | [Insert result] |
+| 10 × 10 | 0.000005400000 seconds | 0.000000180000 seconds |
+| 100 × 100 | 0.000543300000 seconds | 0.000018110000 seconds |
+| 1000 × 1000 | 0.050163800000 seconds | 0.001672126667 seconds |
 ---
 
 ## Performance Analysis
