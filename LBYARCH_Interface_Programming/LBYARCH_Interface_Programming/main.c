@@ -15,7 +15,7 @@ int main(void)
     printf("=== Grayscale Image Float-to-Integer Converter ===\n");
 
     // correctness test
-    printf("Enter height and width: ");
+    printf("\nEnter height and width: ");
 
     if (scanf("%d %d", &height, &width) != 2)
     {
@@ -27,7 +27,7 @@ int main(void)
     height = 10; // 100 , 1000 
 	width = 10; // 100 , 1000 
     */
-
+    printf("\n");
 
     int size = height * width;
 
