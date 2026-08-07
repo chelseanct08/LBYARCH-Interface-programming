@@ -8,8 +8,8 @@
 
 ### Sample Input
 ```text
-Input Image:
-3 4
+Enter height and width: 3 4
+Enter 12 grayscale values (0.0 to 1.0):
 0.25 0.35 0.45 0.33
 0.55 0.65 0.75 0.33
 0.85 0.95 0.15 0.33
